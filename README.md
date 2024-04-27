@@ -1,12 +1,6 @@
 # Stardew Valley Multiplayer Docker Compose
 
-Update: Previous versions provided game files to create the server with the Docker container. To respect ConcernedApe's work and follow 
-intellectual property law, this will no longer be the case. Users will still be allowed to use their own copy of the game, however. For now,
-I will simply be disabling the sharing of game files which will render the Dockerfile incomplete. Those with more advanced Docker
-knowledge will be able to make alterations. Life is busy so I appreciate patience while I work to update instructions on how to use
-your own game files. I welcome pull requests to aid in this effort. 
-
-This project aims to autostart a Stardew Valley Multiplayer Server as easy as possible.
+This project aims to autostart a Stardew Valley Multiplayer Server as easy as possible. Updated for 1.6!
 
 ## Notes
 
@@ -17,12 +11,43 @@ This project aims to autostart a Stardew Valley Multiplayer Server as easy as po
 
 ## Setup
 
-### Docker-Compose
-
+### git clone
 ```
 git clone https://github.com/norimicry/stardew-multiplayer-docker.git
+```
 
-docker-compose up
+### Download game files from GOG
+go to gog.com, login with your account, go to stardew valley game and download linux version \
+open terminal go to directory of downloaded file, there will be a file that looks like
+```
+stardew_valley_1_6_6_24117_6728858633_72932.sh
+```
+then unzip file
+```
+unzip stardew_valley_1_6_6_24117_6728858633_72932.sh
+```
+then copy game files directory to `docker/gamefiles`
+```
+cp -r data/noarch docker/gamefiles
+```
+game files directory should look like
+```
+docs  game  gameinfo  start.sh  support
+```
+
+### Docker-Compose
+current version of docker includes docker compose, so command looks now
+```
+docker compose
+```
+
+build docker container
+```
+docker compose build
+```
+start docker container
+```
+docker compose up
 ```
 
 ### Configuration

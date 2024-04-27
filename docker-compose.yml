@@ -3,7 +3,7 @@ version: '2.2'
 services:
   valley:
     build: docker
-    container_name: stardew
+    container_name: stardew-local
     environment:
       # VNC
       - VNC_PASSWORD=insecure
