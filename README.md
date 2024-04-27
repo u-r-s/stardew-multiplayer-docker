@@ -17,8 +17,11 @@ git clone https://github.com/norimicry/stardew-multiplayer-docker.git
 ```
 
 ### Download game files from GOG
-go to gog.com, login with your account, go to stardew valley game and download linux version \
-open terminal go to directory of downloaded file, there will be a file that looks like
+go to gog.com, \
+login with your account, \
+go to Stardew Valley game and download linux version \
+open terminal go to directory of downloaded file, \
+there will be a file that looks like
 ```
 stardew_valley_1_6_6_24117_6728858633_72932.sh
 ```
@@ -36,7 +39,7 @@ docs  game  gameinfo  start.sh  support
 ```
 
 ### Docker-Compose
-current version of docker includes docker compose, so command looks now
+current version of docker includes docker compose, so command is
 ```
 docker compose
 ```
