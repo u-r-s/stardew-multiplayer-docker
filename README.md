@@ -31,7 +31,7 @@ unzip stardew_valley_1_6_6_24117_6728858633_72932.sh
 ```
 then copy game files directory to `docker/gamefiles`
 ```
-cp -r data/noarch docker/gamefiles
+cp -r data/noarch [replace with path to project root]/docker/gamefiles
 ```
 game files directory should look like
 ```
